@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+body {
+  font-family: sans-serif;
+  background: rgb(190, 220, 255);
+  background: linear-gradient(90deg, rgba(190, 220, 255, 1) 0%, rgba(230, 231, 232, 1) 35%, rgba(252, 252, 252, 1) 78%, rgba(204, 227, 255, 1) 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  font-family: 'Lato', sans-serif;
+}
+
+.container {
+  border: 5px #b2bec3;
+  box-shadow: 0 3px 6px;
+  padding: 30px;
+  width: 500px;
+  border-radius: 10px;
+  font-size: 20px;
+}
+
+.control {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding-bottom: 20px;
+}
+
+.totalBalance {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+h1 {
+  letter-spacing: 1px;
+  margin: 0;
+  color: #2e75cc;
+}
+
+h4 {
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.inc-exp-container {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 1px 1px 6px 1px #b2bec3;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+.inc-exp-container>div {
+  flex: 1;
+  text-align: center;
+}
+
+.inc-exp-container>div:first-of-type {
+  border-right: 1px solid #dedede;
+}
+
+.money {
+  font-size: 20px;
+  letter-spacing: 1px;
+  margin: 5px 0;
+}
+
+.money.plus {
+  color: #2ecc71;
+}
+
+.money.minus {
+  color: #c0392b;
+}
+
+.obs1 {
+  color: #e61700;
+  font-size: 16px;
+  border-bottom: 1px solid #bbb;
+}
+
+.myTransactions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-control {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.obs2 {
+  color: #e61700;
+  font-size: 16px;
+}
+
+label {
+  display: inline-block;
+  margin: 10px 0;
+}
+
+input[type='text'],
+input[type='number'] {
+  border: 1px solid #dedede;
+  border-radius: 2px;
+  display: block;
+  font-size: 16px;
+  padding: 10px;
+  width: 100%;
+}
+
+.btn {
+  cursor: pointer;
+  background-color: #2e75cc;
+  color: #fff;
+  border-radius: 10px;
+  border-style: solid;
+  border-width: 1px;
+  box-shadow: 0px 4px 6px 0px rgb(44, 46, 89);
+  font-size: 18px;
+  margin: 15px 150px 30px;
+  margin-top: 30px;
+  padding: 10px;
+  width: 40%;
+}
+
+.btn:focus,
+.delete-btn:focus {
+  outline: 0;
+}
+
+.transactions li {
+  background-color: #fff;
+  box-shadow: var(--box-shadow);
+  color: #333;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.transactions li.plus {
+  border-right: 5px solid #2ecc71;
+}
+
+.transactions li.minus {
+  border-right: 5px solid #c0392b;
+}
+
+.delete-btn {
+  cursor: pointer;
+  background-color: #e74c3c;
+  border: 0;
+  color: #fff;
+  font-size: 20px;
+  line-height: 20px;
+  padding: 2px 5px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(-100%, -50%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.transactions li:hover .delete-btn {
+  opacity: 1;
+}
