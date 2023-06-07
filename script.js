@@ -12,8 +12,7 @@ let transactions = localStorage.
 	getItem('transactions') !== null ? localStorageTransactions : []
 
 const removeTransaction = ID => {
-	transactions = transactions.filter(transaction => 
-		transaction.id !== ID)
+	transactions = transactions.filter(transaction => transaction.id !== ID)
 	updateLocalStorage()
 	init() 
 }
