@@ -103,4 +103,3 @@ const handleFormSubmit = event => {
 }
 
 form.addEventListener('submit', handleFormSubmit)
-
