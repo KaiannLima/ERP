@@ -102,4 +102,4 @@ const handleFormSubmit = event => {
 	cleanInputs()
 }
 
-form.addEventListener('submit', handleFormSubmit).
+form.addEventListener('submit', handleFormSubmit)
